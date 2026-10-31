@@ -27,7 +27,7 @@ def lambda_handler(event, context):
     
     # 2. Guardar en bucket S3 con estrategia push
     s3 = boto3.client('s3')
-    nombre_archivo = f"comentario_{tenant_id}_{uuidv1}.json"
+    nombre_archivo = f"comentarios/{tenant_id}/{uuidv1}.json"
     
     response_s3 = s3.put_object(
         Bucket=nombre_bucket,
