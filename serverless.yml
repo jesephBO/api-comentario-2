@@ -10,7 +10,7 @@ provider:
     role: arn:aws:iam::246946388956:role/LabRole
   environment:
     TABLE_NAME: ${sls:stage}-t_comentarios
-    BUCKET_NAME: ingesta-comentarios-${sls:stage}-geraldocolchado
+    BUCKET_NAME: ingesta-comentarios-${sls:stage}
 
 functions:
   crear:
